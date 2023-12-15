@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+
+
+    <!-- stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/82df66859c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/css/circular-font.css">
+    <link rel="stylesheet" href="./assets/css/artist.css">
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+        defer></script>
+
+    <script src="./assets/js/artist.js" type="module"></script>
+</head>
+
+<body>
+    <!--sinistra-->
+
+    <div class="container-fluid page-wrapper">
+        <div id="rowMain" class="row">
+            <div class="col-2 d-none d-md-none d-lg-block">
+
+                <div id="left" class="container-fluid d-block side-bar ">
+
+                    <button class="side-bar-text d-block f align-items-center">
+                        <i class="bi bi-three-dots fs-4"></i>
+
+                    </button>
+                    <div class="first-menu fs-6 ms-2 d-flex flex-column">
+                        <a href="index.html" class="my-1 side-bar-text d-block align-items-center">
+                            <i class="bi bi-house-door-fill fs-5"></i>
+                            Home
+                        </a>
+                        <a href="search.html" class="my-1 side-bar-text side-bar-search d-block" onclick=""> <!--JS-->
+                            <i class="bi bi-search fs-5"></i>
+                            Cerca
+                        </a>
+                        <a href="#" class="my-1 side-bar-text d-block ms-2">
+                            <strong class="library">||\</strong> La tua libreria
+                        </a>
+                        <div class="mt-5 ms-1">
+                            <div class="d-flex">
+                                <i id="newPl" class="fa-regular side-bar-text fa-square-plus fs-4 "></i>
+                                <a href="#" class="my-1 side-bar-text d-block mb-3 align-items-center">
+                                    Crea playlist
+                                </a>
+                            </div>
+                            <a href="#" class="my-1 side-bar-text d-block mb-3">
+                                <img id="cuore" src="assets/imgs/cuore.jpg" alt="cuore">
+                                Brani che ti piacciono
+                            </a>
+                            <a href="#" class="my-1 side-bar-text d-block">
+                                <img id="segnalibro" src="assets/imgs/Screenshot_2023-12-13_093804.png"
+                                    alt="segnalibro">
+                                I tuoi episodi
+                            </a>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="custom-scrollbar d-flex flex-column ms-2">
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            early stage emily syndrome (sett-ott 2022)
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            Be The Young
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            "..."cit. Kimiko (lug-ago 2022)
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            saggio vibes
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            main characters energy(mag-giu 2022)
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            that fucking mood
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            VEE, CARLOTTA E GIACOMO VANNO A BOSIO
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            An Emily Winchester kind of mood
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            landing page(mar-apr 2022)
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            2021 loll
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            cosa cazzo vuol dire questa affermazione (gen-fe...)
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            honey and glass (nov-dic 2021)
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            (Revenge) Training Arc
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            Lidya -- Emily
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            minecraft e nintendo switch (sep-oct 2021)
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            silvano d'orba? I hardly know her (lug-ago 2021)
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            Culo 2021
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            Frah Quintale | Mix
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            Francesco Guccini | Mix
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            Gaetano - Domenico | Mix
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            Andrea - Francesco | Mix
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            Matteo stand alone | Mix
+                        </a>
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            early stage emily syndrome (sett-ott 2022)
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            Be The Young
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            "..."cit. Kimiko (lug-ago 2022)
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            saggio vibes
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            main characters energy(mag-giu 2022)
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            that fucking mood
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            VEE, CARLOTTA E GIACOMO VANNO A BOSIO
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            An Emily Winchester kind of mood
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            landing page(mar-apr 2022)
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            2021 loll
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            cosa cazzo vuol dire questa affermazione (gen-fe...)
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            honey and glass (nov-dic 2021)
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            (Revenge) Training Arc
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            Lidya -- Emily
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            minecraft e nintendo switch (sep-oct 2021)
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            silvano d'orba? I hardly know her (lug-ago 2021)
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            Culo 2021
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            Frah Quintale | Mix
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            Francesco Guccini | Mix
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            Gaetano - Domenico | Mix
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            Andrea - Francesco | Mix
+                        </a>
+
+                        <a href="#" class="my-2 side-bar-text text-start playlist">
+                            Matteo stand alone | Mix
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--centro-->
+
+            <div id="center" class="col-12 col-lg-8 d-flex flex-column custom-scrollbar">
+                <div id="container-center-main">
+                    <div class="d-flex justify-content-between mt-2">
+                        <div id="topMain" class="d-flex mt-2 ms-4">
+                            <i class="bi bi-chevron-left me-3 bg-black "></i>
+                            <i class="bi bi-chevron-right bg-black d-none d-md-block"></i>
+                        </div>
+                        <!--CAMBIATO DROPDOWN-->
+                        <div class="dropdown"><button
+                                class="btn btn-dark btn-sm dropdown-toggle text-bg-dark border rounded-pill border-0 d-flex align-items-center pt-xl-0 ms-xl-0 ps-xl-1 mb-xl-0 pb-xl-1 pe-xl-3 d-none d-lg-flex"
+                                aria-expanded="false" data-bs-toggle="dropdown" type="button"><img
+                                    class="rounded img-fluid border rounded-circle border-0 ms-xl-0 me-xl-3 mt-xl-1"
+                                    src="./assets/imgs/main/image-5.jpg" width="25" height="25">Lidia Nautilus
+                                ...</button>
+                            <ul class="dropdown-menu bg-black">
+                                <li><a class="dropdown-item text-light" href="#">Account</a></li>
+                                <li><a class="dropdown-item text-light" href="#">Impostazioni</a></li>
+                                <li><a class="dropdown-item text-light" href="#">Esci</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center ms-4">
+                        <img class="verified" src="assets/imgs/search/logoVerificato.png" alt="logoV">
+                        <p id="artVer" class="m-0 ps-1 "> Artista verificato</p>
+                    </div>
+                    <!--   <div class="ms-4">
+                        <h1>Yellowcard</h1>
+                        <p id="ascMens" class="mt-4 d-none mb-4 d-md-block"> 3.433.158 ascoltatori mensili</p>
+                    </div> -->
+                </div>
+
+                <div class="container-second ">
+                    <p id="ascMens2" class=" d-md-none"> 3.433.158 ascoltatori mensili</p>
+                    <div class="d-flex mt-3 justify-content-between align-items-center d-block d-md-none">
+                        <div>
+                            <button type="button" class="seguiti btn btn-dark btn-outline-secondary">Seguiti</button>
+                            <i class="bi bi-three-dots-vertical "></i>
+                        </div>
+                        <div class="d-flex d-block d-md-none">
+                            <i class="bi bi-shuffle fs-3"></i>
+                            <i id="spotiPlay2" class="fa-solid fa-circle-play me-4 ms-2" style="color: #1ed760;"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="row d-flex justify-content-between ">
+                        <div class="d-flex align-items-center d-none d-md-block">
+                            <i id="spotiPlay" class="fa-solid fa-circle-play me-4" style="color: #1ed760;"></i>
+                            <a href="#" id="following">FOLLOWING</a>
+                            <i class="bi bi-three-dots fs-4 ms-4 "></i>
+                        </div>
+                        <div class="top-search">
+                            <div class="d-flex align-items-center d-md-none ">
+                                <div class="position-relative mt-2">
+                                    <img src="assets/imgs/main/image-1.jpg" alt="...">
+                                    <i class="heart fa-brands fa-gratipay" style="color: #a9ffbc;"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <p><strong>Brani che ti piacciono</strong></p>
+                                    <p class="opacity-50">5 brani di Yellowcard</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-md-8 songlist mt-3">
+                            <p class="fw-bold mb-4">Popolari</p>
+                            <div id="song-container" class="container">
+                                <div class="row mb-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="col-8">
+                                            <div class="d-flex align-items-center w-300">
+                                                <div class="d-flex align-items-center">
+                                                    <p>1</p>
+                                                    <img src="assets/imgs/main/image-1.jpg" class="ms-3">
+                                                </div>
+                                                <div
+                                                    class="container ms-3 d-md-flex flex-md-row justify-content-between">
+                                                    <div>
+                                                        <p>Canzone Canzone</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="opacity-50">80.234.174</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <p class="d-none d-md-block">Minuti</p>
+                                            <i class="bi bi-three-dots-vertical d-block d-md-none opacity-50"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="col-8">
+                                            <div class="d-flex align-items-center w-300">
+                                                <div class="d-flex align-items-center">
+                                                    <p>2</p>
+                                                    <img src="assets/imgs/main/image-1.jpg" class="ms-3">
+                                                </div>
+                                                <div
+                                                    class="container ms-3 d-md-flex flex-md-row justify-content-between">
+                                                    <div>
+                                                        <p>Canzone</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="opacity-50">3.233.132.78</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <p class="d-none d-md-block">Minuti</p>
+                                            <i class="bi bi-three-dots-vertical d-block d-md-none opacity-50"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="col-8">
+                                            <div class="d-flex align-items-center w-300">
+                                                <div class="d-flex align-items-center">
+                                                    <p>3</p>
+                                                    <img src="assets/imgs/main/image-1.jpg" class="ms-3">
+                                                </div>
+                                                <div
+                                                    class="container ms-3 d-md-flex flex-md-row justify-content-between">
+                                                    <div>
+                                                        <p>Canzone Canzone provax2</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="opacity-50">13.223.120</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <p class="d-none d-md-block">Minuti</p>
+                                            <i class="bi bi-three-dots-vertical d-block d-md-none opacity-50"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="col-8">
+                                            <div class="d-flex align-items-center w-300">
+                                                <div class="d-flex align-items-center">
+                                                    <p>4</p>
+                                                    <img src="assets/imgs/main/image-1.jpg" class="ms-3">
+                                                </div>
+                                                <div
+                                                    class="container ms-3 d-md-flex flex-md-row justify-content-between">
+                                                    <div>
+                                                        <p>Canzone</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="opacity-50">33.412.32</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <p class="d-none d-md-block">Minuti</p>
+                                            <i class="bi bi-three-dots-vertical d-block d-md-none opacity-50"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="col-8">
+                                            <div class="d-flex align-items-center w-300">
+                                                <div class="d-flex align-items-center">
+                                                    <p>5</p>
+                                                    <img src="assets/imgs/main/image-1.jpg" class="ms-3">
+                                                </div>
+                                                <div
+                                                    class="container ms-3 d-md-flex flex-md-row justify-content-between">
+                                                    <div>
+                                                        <p>Canzone</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="opacity-50">323.432.32</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <p class="d-none d-md-block">Minuti</p>
+                                            <i class="bi bi-three-dots-vertical d-block d-md-none opacity-50"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <p id="altro">VISUALIZZA ALTRO</p>
+                        </div>
+
+                        <div class="col-12 col-md-4 mt-3">
+                            <p id="brani">Brani che ti piacciono</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img id="like" src="assets/imgs/main/image-10.jpg" alt="...">
+                                <p id="textCol">Hai messo Mi piace a 11 brani <br><span>Di yellowcard</span></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <p class="fw-bold ms-4 mb-3">Discografia</p>
+                <div class="row align-items-center">
+                    <div class="under card col-5 me-4 ms-4 col-md-2 mb-2">
+                        <img src="assets/imgs/search/image-13.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">2020 • Album</p>
+                        </div>
+                    </div>
+                    <div class="under card col-5 col-md-2 mb-2">
+                        <img src="assets/imgs/search/image-14.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">2018 • Singolo</p>
+                        </div>
+                    </div>
+                    <div class="under card col-5 me-4 ms-4 col-md-2 mb-2">
+                        <img src="assets/imgs/search/image-15.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">2023 • Album</p>
+                        </div>
+                    </div>
+                    <div class="under card col-5 col-md-2 mb-2">
+                        <img src="assets/imgs/search/image-18.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">2021 • Album</p>
+                        </div>
+                    </div>
+                    <div class="under card col-5 me-4 ms-4 col-md-2 mb-2">
+                        <img src="assets/imgs/search/image-20.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">2017 • Singolo</p>
+                        </div>
+                    </div>
+                    <div class="under card col-5 d-md-none col-md-2 mb-2">
+                        <img src="assets/imgs/search/image-5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">2011 • Album</p>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="fw-bold ms-4 mt-4 mb-3">Scelta dei Fan</p>
+                <div class=" fan row mt-1">
+                    <div class="under card col-5 me-4 ms-4 col-md-2 mb-2 ">
+                        <img src="assets/imgs/search/image-17.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome Artista</h5>
+                            <p class="card-text">Categoria</p>
+                        </div>
+                    </div>
+                    <div class="under card col-5 col-md-2 mb-2 ">
+                        <img src="assets/imgs/search/image-11.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome Artista</h5>
+                            <p class="card-text">Categoria</p>
+                        </div>
+                    </div>
+                    <div class="under card col-5 me-4 ms-4 col-md-2 mb-2 ">
+                        <img src="assets/imgs/search/image-23.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome Artista</h5>
+                            <p class="card-text">Categoria</p>
+                        </div>
+                    </div>
+                    <div class="under card col-5 col-md-2 mb-2">
+                        <img src="assets/imgs/search/image-29.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome Artista</h5>
+                            <p class="card-text">Categoria</p>
+                        </div>
+                    </div>
+                    <div class="under card col-5 me-4 ms-4 mb-2 col-md-2 ">
+                        <img src="assets/imgs/search/image-26.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome Artista</h5>
+                            <p class="card-text">Categoria</p>
+                        </div>
+                    </div>
+                    <div class="under card col-5 col-md-2 d-md-none mb-2 ">
+                        <img src="assets/imgs/search/image-8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome Artista</h5>
+                            <p class="card-text">Categoria</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <footer class="text-start">
+                    <div class="container p-4 pt-0">
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Company</h6>
+                                <p>Impressum</p>
+                                <p>About</p>
+                                <p>Jobs</p>
+                            </div>
+                            <hr class="w-100 clearfix d-md-none" />
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Communities</h6>
+                                <p><a href="#">For Artists</a></p>
+                                <p><a href="#">Developers</a></p>
+                                <p><a href="#">Advertising</a></p>
+                                <p><a href="#">Investors</a></p>
+                            </div>
+                            <hr class="w-100 clearfix d-md-none" />
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+                                <p><a href="#">Your Account</a></p>
+                                <p><a href="#">Help</a></p>
+                            </div>
+                            <hr class="w-100 clearfix d-md-none" />
+                            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end mb-5">
+                                <a class="btn btn-outline-light rounded-pill btn-floating m-1" href="#" role="button"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light rounded-pill btn-floating m-1" href="#" role="button"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-light rounded-pill btn-floating m-1" href="#" role="button"><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <hr class="my-3">
+                        <section class=" pt-0">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-7 col-lg-8 text-center text-md-start ">
+                                    <div class="p-3 d-flex">
+                                        <p class="me-2">© 2023 Copyright: </p>
+                                        <a href="#">Spotify</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </footer>
+
+
+            </div>
+
+
+
+            <!--destra-->
+            <div id="right" class="col-2 d-none d-md-none d-lg-block">
+
+                <div class="text-end">
+                    <i class="bi bi-dash"></i>
+                    <i class="bi bi-window-stack ms-4"></i>
+                    <i class="bi bi-x-lg ms-4 me-2"></i>
+                </div>
+                <div class="d-flex mt-3 justify-content-between">
+                    <h2 class="text-light fs-6 ms-3"> Attività amici</h2>
+                    <div>
+                        <i class="bi bi-person-plus"></i>
+                        <i class="bi bi-x-lg ms-3 me-2"></i>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <div class="d-flex justify-content-between mx-3 align-items-center">
+                        <div class="d-flex">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"/>
+                                  </svg>
+                            </div>
+                            <div class="ms-2">
+                                <div> <a href="#">Gaetano Montalto</a></div>
+                                <div> <a href="#">'O Sarracino · Renato Carosone</a></div>
+                                <div class="d-flex align-items-center">
+                                    <div><img src="assets/imgs/note.svg" alt="note" width="15px"></div>
+                                    <div class="ms-2"><a href="#">The Platinum Collection</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>3 Ore</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <div class="d-flex justify-content-between mx-3 align-items-center">
+                        <div class="d-flex">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"/>
+                                  </svg>
+                            </div>
+                            <div class="ms-2">
+                                <div> <a href="#">Matteo Carletti</a></div>
+                                <div> <a href="#">Demons · Imagine Dragons</a></div>
+                                <div class="d-flex align-items-center">
+                                    <div><img src="assets/imgs/note.svg" alt="note" width="15px"></div>
+                                    <div class="ms-2"><a href="#">Night Visions</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>1 Ore</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <div class="d-flex justify-content-between mx-3 align-items-center">
+                        <div class="d-flex">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"/>
+                                  </svg>
+                            </div>
+                            <div class="ms-2">
+                                <div> <a href="#">Andrea Battaglia</a></div>
+                                <div> <a href="#">Ciuri Ciuri · Roy Paci & Aretuska</a></div>
+                                <div class="d-flex align-items-center">
+                                    <div><img src="assets/imgs/note.svg" alt="note" width="15px"></div>
+                                    <div class="ms-2"><a href="#">Ciuri Ciuri</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>5 Ore</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <div class="d-flex justify-content-between mx-3 align-items-center">
+                        <div class="d-flex">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"/>
+                                  </svg>
+                            </div>
+                            <div class="ms-2">
+                                <div> <a href="#">Francesco Margotta</a></div>
+                                <div> <a href="#">Vieni A Ballare In Puglia · Caparezza</a></div>
+                                <div class="d-flex align-items-center">
+                                    <div><img src="assets/imgs/note.svg" alt="note" width="15px"></div>
+                                    <div class="ms-2"><a href="#">Le Dimensioni Del Mio Caos</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>20 Ore</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <div class="d-flex justify-content-between mx-3 align-items-center">
+                        <div class="d-flex">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"/>
+                                  </svg>
+                            </div>
+                            <div class="ms-2">
+                                <div> <a href="#">Domenico Villani</a></div>
+                                <div> <a href="#">Angela · Checco Zalone</a></div>
+                                <div class="d-flex align-items-center">
+                                    <div><img src="assets/imgs/note.svg" alt="note" width="15px"></div>
+                                    <div class="ms-2"><a href="#">Cado dalle nubi - world edition</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>15 Ore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--barra musica-->
+
+    <div id="container-footer"
+        class="container-fluid text-center d-flex mb-xxl-0 pb-xxl-2 pt-lg-3 fixed-bottom d-none d-md-flex"
+        style="background: #121212;">
+        <div class="col d-flex align-items-center me-lg-0 ms-lg-0">
+            <div><img class="img-fluid ms-xxl-0 me-xl-0 pb-lg-2" src="assets/imgs/main/image-11.jpg" width="50"
+                    height="50" /></div>
+            <div class="bar-artist d-flex flex-column align-self-center ms-xl-2 ms-lg-2"><span>Imagine
+                    Dragons</span><span id="under-title">Bones</span></div>
+            <div class="d-flex align-items-center"><svg class="bi bi-heart ms-xl-2 ms-lg-2"
+                    xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z">
+                    </path>
+                </svg></div>
+        </div>
+        <div class="col mt-xxl-1">
+            <div class="mt-xxl-1 mt-xl-2 mt-lg-2"><svg
+                    class="icon icon-tabler icon-tabler-repeat text-success me-xxl-2 me-xl-2 me-lg-2"
+                    xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 12v-3a3 3 0 0 1 3 -3h13m-3 -3l3 3l-3 3"></path>
+                    <path d="M20 12v3a3 3 0 0 1 -3 3h-13m3 3l-3-3l3-3"></path>
+                </svg><svg class="me-xxl-2 me-xl-2 me-lg-2" xmlns="http://www.w3.org/2000/svg" width="1.5em"
+                    height="1.5em" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 17L10 12L18 7V17Z" fill="currentColor"></path>
+                    <path d="M6 7H9V17H6V7Z" fill="currentColor"></path>
+                </svg><svg
+                    class="bi bi-play-fill text-black bg-light border rounded-circle border-0 ps-xxl-1 pe-xxl-1 me-xxl-2 me-xl-2 pe-xl-1 ps-xl-1 me-lg-2 pe-lg-1 ps-lg-1"
+                    xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor"
+                    viewBox="0 0 16 16" style="font-size: 25px;">
+                    <path
+                        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z">
+                    </path>
+                </svg><svg class="me-xxl-2 me-xl-2 me-lg-2" xmlns="http://www.w3.org/2000/svg" width="1.5em"
+                    height="1.5em" viewBox="0 0 24 24" fill="none">
+                    <path d="M6 17L14 12L6 7V17Z" fill="currentColor"></path>
+                    <path d="M18 7H15V12V17H18V7Z" fill="currentColor"></path>
+                </svg><svg class="bi bi-arrow-repeat text-success me-xxl-2 me-xl-2" xmlns="http://www.w3.org/2000/svg"
+                    width="2.4em" height="2.4em" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z">
+                    </path>
+                    <path fill-rule="evenodd"
+                        d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z">
+                    </path>
+                </svg></div>
+            <div class="d-flex justify-content-center">
+                <div class="time d-flex align-items-center mt-xxl-1 mb-xxl-1 mt-lg-1"><span
+                        class="me-xxl-1 ms-lg-0 me-lg-2">0.58</span>
+                    <div class="progress bg-secondary" style="width: 460px;height: 4px;">
+                        <div class="progress-bar bg-light" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 35%;"><span class="visually-hidden">35%</span></div>
+                    </div><span class="durate ms-xxl-1 ms-lg-2">3.20</span>
+                </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-end align-items-center">
+            <div class="d-flex"><svg class="me-xl-2 me-lg-2" xmlns="http://www.w3.org/2000/svg" height="1em"
+                    viewBox="0 0 24 24" width="1em" fill="currentColor" style="font-size: 20px;">
+                    <path d="M0 0h24v24H0V0z" fill="none"></path>
+                    <path
+                        d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm-1-9c0-.55.45-1 1-1s1 .45 1 1v6c0 .55-.45 1-1 1s-1-.45-1-1V5zm6 6c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z">
+                    </path>
+                </svg><svg class="bi bi-sliders me-xl-2 me-lg-2" xmlns="http://www.w3.org/2000/svg" width="1.8em"
+                    height="1.3em" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z">
+                    </path>
+                </svg><svg class="bi bi-speaker me-xl-2 me-lg-2" xmlns="http://www.w3.org/2000/svg" width="1.8em"
+                    height="1.3em" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z">
+                    </path>
+                    <path
+                        d="M8 4.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5zM8 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-3.5 1.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                    </path>
+                </svg><svg class="me-xl-2 me-lg-2" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.25em"
+                    viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M15.5355 8.46448C17.4881 10.4171 17.4881 13.5829 15.5355 15.5355M18.364 5.63599C21.8787 9.15071 21.8787 14.8492 18.364 18.3639M5.58579 15.0001H4C3.44772 15.0001 3 14.5523 3 14.0001V10.0001C3 9.44777 3.44772 9.00005 4 9.00005H5.58579L10.2929 4.29294C10.9229 3.66298 12 4.10915 12 5.00005V19.0001C12 19.891 10.9229 20.3371 10.2929 19.7072L5.58579 15.0001Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></div><input class="visible me-xl-1 me-lg-2" type="range"
+                style="width: 100.323px;filter: blur(0px) brightness(100%) contrast(141%);border-style: none;height: 5px;"
+                data-bs-theme="dark" />
+            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24"
+                width="1em" fill="currentColor">
+                <rect fill="none" height="24" width="24"></rect>
+                <polygon points="21,11 21,3 13,3 16.29,6.29 6.29,16.29 3,13 3,21 11,21 7.71,17.71 17.71,7.71"></polygon>
+            </svg>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

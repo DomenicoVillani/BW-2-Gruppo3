@@ -1,0 +1,442 @@
+body {
+  background-color: #121212;
+  color: #fefefe;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  background-color: #202020;
+}
+
+h4:hover {
+  text-decoration: underline;
+}
+
+li:hover {
+  color: #1ed760;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bi:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.iconWrapper {
+  position: relative;
+  margin-left: 10px;
+}
+
+.iconLabel {
+  display: none;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2c2c2c;
+  color: #f2f2f2;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.iconWrapper:hover .iconLabel {
+  display: block;
+}
+
+.box {
+  width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box img {
+  width: 50%;
+  height: 50%;
+}
+
+.boxOnlyMobile {
+  width: 230px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shadowBox {
+  box-shadow: 0 0 8px rgba(252, 241, 241, 0.5);
+}
+
+.boxOnlyMobile img {
+  width: 50%;
+  height: 50%;
+}
+
+.largerBox:hover {
+  cursor: pointer;
+}
+
+.customPlaylist {
+  background-color: #64616163;
+  transition: background-color 0.5s ease;
+}
+
+.customPlaylist:hover {
+  background-color: #cecece4b;
+  cursor: pointer;
+}
+
+.hiddenText {
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.roundedTopLeft {
+  border-radius: 8px 0px 0px 0px;
+}
+
+.roundedBottomLeft {
+  border-radius: 0px 0px 0px 8px;
+}
+
+.containerOnlyMobile {
+  background: linear-gradient(
+    to top left,
+    rgba(44, 44, 44, 1) 75%,
+    rgba(255, 255, 255, 0.5)
+  );
+  transition: background-size 0.5s ease;
+  background-size: 100% 100%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.containerOnlyMobile:hover {
+  background-size: 200% 200%;
+}
+
+.btnCustom {
+  border-radius: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btnPlay {
+  background-color: #1ed760;
+}
+
+.btnPlay:hover {
+  background-color: #1ed760;
+  color: white;
+}
+
+.btnSection {
+  border-radius: 20px;
+  background-color: #202020;
+  font-size: 0.7rem;
+}
+
+.btnSection:hover {
+  background-color: #202020;
+  color: #6c757d;
+  text-decoration: underline;
+}
+
+.containerAd {
+  background: linear-gradient(to top right, #121212 75%, #202020);
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.stickyCustom {
+  position: sticky;
+  top: 0;
+  background-color: #202020;
+  padding: 10px;
+}
+
+.card {
+  background-color: #2c2c2c;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+.card-img {
+  border-radius: 20px;
+}
+
+.card:hover {
+  background-color: #64616163;
+  cursor: pointer;
+}
+
+#imgAd {
+  width: 210px;
+}
+
+.sizeBoxPlaylist {
+  width: auto;
+  height: auto;
+}
+
+/* CSS matteo per album row e artist row */
+.under {
+  background-color: rgb(27, 26, 26);
+  cursor: pointer;
+}
+
+.under h5 {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.under p {
+  color: white;
+  opacity: 0.5;
+  font-size: 0.7rem;
+}
+
+.under img {
+  width: 80%;
+  margin: auto;
+  margin-top: 1.3rem;
+}
+
+/* CSS sx center dx */
+
+#rowMain > * {
+  padding: 0;
+}
+
+#cuore {
+  width: 1.3rem;
+  margin-right: 0.5rem;
+}
+
+#segnalibro {
+  width: 1.3rem;
+  margin-right: 0.5rem;
+}
+
+.first-menu a i,
+.first-menu a {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+strong {
+  font-size: 0.8rem;
+  margin-right: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#change {
+  margin-top: 10rem;
+}
+
+#newPl {
+  margin-right: 0.7rem;
+}
+
+.side-bar {
+  background-color: black;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  height: 100vh;
+}
+
+.side-bar-text {
+  background-color: black;
+  opacity: 0.5;
+  border: none;
+  color: white;
+}
+
+.side-bar i {
+  margin-right: 0.5rem;
+}
+
+.side-bar-text:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+hr {
+  background-color: rgba(245, 245, 245, 0.192);
+}
+
+.custom-scrollbar a{
+  font-size: 0.7rem;
+}
+
+.custom-scrollbar {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #838282;
+}
+
+.top-bar.scrolled {
+  background-color: #111;
+}
+
+/* parte destra*/
+#right {
+  background-color: black;
+}
+/* playerMusic*/
+
+#container-footer {
+  background-color: var(--bs-body-color);
+}
+
+.bar-artist span{
+  font-size: 0.8rem;
+}
+
+#under-title{
+  font-size: 0.6rem;
+  opacity: 0.5;
+}
+
+.time, .durate{
+font-size: 0.7rem;
+}
+
+.iconBotton{
+  color: #adadad
+}
+
+.iconBotton:hover{
+  cursor: pointer;
+  color: whitesmoke;
+  transition: color 0.5s ease;
+  transform: scale(1.2);
+}
+
+.horizontal-scrolling-container{
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.horizontal-scrolling-items {
+  animation: infiniteScroll 5s linear infinite ;
+}
+
+@keyframes infiniteScroll {
+  from {transform: translateX(140%)}
+  to {transform: translateX(-140%);}
+}
+
+#reproductionBar{
+  background-color: #3a3838;
+}
+
+.position-fixed{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .custom-scrollbar {
+    height: calc(100vh - 5vh);
+    overflow-y: auto;
+  }
+}
+
+
+
+footer p,
+h6,
+a {
+  color: white;
+  opacity: 0.5;
+  font-size: 0.7rem;
+}
+
+footer {
+  margin-top: 5rem;
+  margin-right: 2rem;
+}
+
+#spotiPlay2 {
+  font-size: 3rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.top-search img {
+  width: 3.5rem;
+  border-radius: 50%;
+}
+
+.heart {
+  color: black;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 1.2rem;
+  top: 39px;
+  right: 7px;
+}
+
+.container span,
+p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.iconBotton{
+    color: #adadad
+}
+
+.iconBotton:hover{
+    cursor: pointer;
+    color: whitesmoke;
+    transition: color 0.5s ease;
+    transform: scale(1.2);
+}
+
+.horizontal-scrolling-container{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.horizontal-scrolling-items {
+    animation: infiniteScroll 5s linear infinite ;
+}
+
+@keyframes infiniteScroll {
+    from {transform: translateX(140%)}
+    to {transform: translateX(-140%);}
+}
+
+#reproductionBar{
+    background-color: #3a3838;
+}
+
+.position-fixed{
+    position: fixed;
+    bottom: 0;
+}
+
+#bottonContainer{
+    background-color: rgba(44, 42, 42, 0.774);
+  }
+
