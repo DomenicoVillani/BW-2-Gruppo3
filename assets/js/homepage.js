@@ -33,7 +33,7 @@ async function renderContainerAd(artistID) {
       <p>${name}</p>
       <p>Ascolta il nuovo singolo di "${name}"</p>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn me-3 fw-bold btnCustom btnPlay">Play</button>
+      <a href="./album.html?id=${id}" type="button" class="btn me-3 fw-bold btnCustom btnPlay">Play</a>
         <button type="button" class="btn btn-outline-light border-secondary fw-bold me-3 btnCustom">Salva</button>
         <div class="iconWrapper">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#6c757d" class="bi bi-three-dots"
@@ -58,16 +58,16 @@ async function renderContainerAd(artistID) {
 }
  */
 
-const albumIDs = [240056142, 113019522, 62485122, 229744, 55961782, 78200];
+/* const albumIDs = [240056142, 113019522, 62485122, 229744, 55961782, 78200];
 
 function renderPreferredAlbumRow() {
   const albumsList = document.querySelectorAll("#album-row div.under");
   console.log(albumsList);
 
   albumsList.forEach(async (album, index) => {
-    /*  const albumData = await getAlbumData(albumIDs[index]);
+     const albumData = await getAlbumData(albumIDs[index]);
 
-    const { id, title, covers, release_date } = album; */
+    const { id, title, covers, release_date } = album; 
     const albumHtml = `
     <img src="assets/imgs/search/image-13.jpeg" class="card-img-top" alt="...">
     <div class="card-body">
@@ -77,6 +77,62 @@ function renderPreferredAlbumRow() {
 
     album.innerHTML = albumHtml;
   });
+} */
+
+const albumIDs = [240056142, 113019522, 62485122, 229744];
+// 55961782, 78200
+async function renderPreferredAlbumRow() {
+  const albumsRowContainer = document.querySelector("#album-rows");
+  console.log(albumsRowContainer);
+
+  let albumsHtml = "";
+  for (let i = 0; i < 4; i++) {
+    const albumData = await getAlbumData(albumIDs[i]);
+
+    const { id, title, covers, release_date } = albumData;
+    const albumHtml = `<div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-4">
+    <div class="card border-0">
+      <img src="${covers[1]}" class="card-img p-3" alt="imgPlaylist">
+      <div class="card-body">
+        <h5 class="card-title text-truncate"><a href="./album.html?id=${id}" >${title}</a></h5>
+        <p class="card-text text-secondary">${release_date}</p>
+      </div>
+    </div>
+  </div>`;
+
+    albumsHtml += albumHtml;
+  }
+
+  albumsRowContainer.innerHTML = albumsHtml;
 }
 
+const artistIDs = [1690105, 64635, 2829401, 4966646];
+
+async function renderPreferredArtistRow() {
+  const artistsRowContainer = document.querySelector("#artist-rows");
+  console.log(artistsRowContainer);
+
+  let artistsHtml = "";
+  for (let i = 0; i < 4; i++) {
+    const artistData = await getArtistData(artistIDs[i]);
+
+    const { artistId, name, pictures, nb_fan } = artistData;
+    const artistHtml = `<div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-4">
+    <div class="card border-0">
+      <img src="${pictures[1]}" class="card-img p-3" alt="imgPlaylist">
+      <div class="card-body">
+        <h5 class="card-title text-truncate"><a href="./artist.html?id=${artistId}">${name}</a></h5>
+        <p class="card-text text-secondary">fans: ${nb_fan}</p>
+      </div>
+    </div>
+  </div>`;
+
+    artistsHtml += artistHtml;
+  }
+
+  artistsRowContainer.innerHTML = artistsHtml;
+}
+
+renderContainerAd(314276);
 renderPreferredAlbumRow();
+renderPreferredArtistRow();
